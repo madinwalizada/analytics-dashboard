@@ -67,10 +67,10 @@ export default function Home() {
       </div>
       {/* Sales bar chart */}
       <div className="mb-8">
-        <SalesChart range={range} />
+        <SalesChart />
       </div>
       {/* Transactions */}
-      <TransactionsTable range={range} />
+      <TransactionsTable />
     </main>
   );
 }
