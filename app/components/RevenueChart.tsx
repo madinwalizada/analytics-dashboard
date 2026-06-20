@@ -82,7 +82,7 @@ export default function RevenueChart({ range }: Props) {
             tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`}
           />
           <Tooltip
-            formatter={(v: number) => [`$${v.toLocaleString()}`, "Revenue"]}
+            formatter={(v) => [`$${Number(v).toLocaleString()}`, "Revenue"]}
           />
           <Line
             type="monotone"
